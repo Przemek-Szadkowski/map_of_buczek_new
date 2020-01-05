@@ -89,6 +89,7 @@ main div.select_inputs select {
     height: 120%;
     text-transform: uppercase;
     margin-left: 10px;
+    background-color: rgb(208, 219, 208);
 }
 
 div.map {
@@ -550,6 +551,100 @@ div.map i.fa-car-side {
     left: 27.3%;
 }
 
+div.map i.fa-car-side {
+    top: 91%;
+    left: 27.3%;
+}
+
+div.map i.fa-pizza-slice {
+    top: 34.5%;
+    left: 43%;
+}
+
+/* kierunki na mapie głównej */
+
+div.directions p {
+    position: absolute;
+    text-transform: uppercase;
+    color: rgb(116, 182, 35);
+    font-size: .6rem;
+    z-index: 5;
+    font-weight: bold;
+}
+
+div.directions p:nth-of-type(1) {
+    top: 2%;
+    left: 23%;
+}
+
+div.directions p:nth-of-type(2) {
+    top: 92%;
+    left: 84%;
+}
+
+div.directions p:nth-of-type(3) {
+    top: 92.5%;
+    left: 1%;
+}
+
+div.directions p:nth-of-type(4) {
+    top: 30%;
+    left: 5%;
+}
+
+div.directions p:nth-of-type(5) {
+    top: 31.2%;
+    left: 77.5%;
+}
+
+div.directions p:nth-of-type(6) {
+    top: 0.5%;
+    left: 73%;
+}
+
+div.directions i {
+    position: absolute;
+    color: black;
+    opacity: 1;
+    font-size: .8rem;
+}
+
+div.directions i:nth-of-type(1) {
+    top: 0.2%;
+    left: 39.5%;
+    transform: rotate(-18deg);
+}
+
+div.directions i:nth-of-type(2) {
+    top: 89%;
+    left: 90%;
+    transform: rotate(130deg);
+}
+
+div.directions i:nth-of-type(3) {
+    top: 93%;
+    left: 16%;
+    transform: rotate(200deg);
+}
+
+div.directions i:nth-of-type(4) {
+    top: 27%;
+    left: 0.6%;
+    transform: rotate(292deg);
+}
+
+div.directions i:nth-of-type(5) {
+    top: 30.6%;
+    left: 93.5%;
+    transform: rotate(70deg);
+}
+
+div.directions i:nth-of-type(6) {
+    top: 0.9%;
+    left: 66.5%;
+    transform: rotate(60deg);
+}
+
 /* active classes */
 
 .visible {
@@ -571,7 +666,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5px;
+    /* margin-bottom: 5px; */
+    background-color: rgb(208, 219, 208);
 }
 
 footer p {
