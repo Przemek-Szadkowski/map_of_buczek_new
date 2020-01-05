@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(240, 238, 232);
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 20vh;
+    width: 100%;
+    padding-top: 5px;
+}
+
+header img {
+    display: block;
+    height: 60%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(208, 219, 208);
+    padding: 5px 0;
+}
+
+/* main */
+
+main {
+    height: 77vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px;
+}
+
+main div.select_inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+main div.select_inputs + div.select_inputs {
+    margin-top: 10px;
+}
+
+main div.select_inputs label {
+    flex-basis: 35%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main div.select_inputs select {
+    flex-basis: 60%;
+    display: block;
+    width: 60%;
+    height: 120%;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+div.map {
+    position: relative;
+    max-width: 778px;
+    max-height: 880px;
+    margin: 10px 10px 0px;
+    border: 2px solid rgb(208, 219, 208);
+    overflow: hidden;
+}
+
+div.map img.mapofBuczek {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    max-width: 778px;
+    max-height: 880px;
+}
+
+div.map img.mapnorth {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 778px;
+    max-height: 880px;
+    top: -1000px;
+    left: 0%;
+    transition: .5s;
+    z-index: 4;
+}
+
+div.map img.mapnorth_top {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 778px;
+    max-height: 880px;
+    top: -1000px;
+    left: 0%;
+    transition: .5s;
+    z-index: 9;
+}
+
+div.map img.mapnorth.center {
+    top: 0px;
+}
+
+div.map img.mapnorth_top.center {
+    top: 0px;
+}
+
+/* streets */
+
+.brojsce {
+    position: absolute;
+    top: 69.8%;
+    left: 90.5%;
+    /* width: auto; */
+    height: 14.8%;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.cicha {
+    position: absolute;
+    top: 77.6%;
+    left: 39%;
+    width: 6%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.debowa {
+    position: absolute;
+    top: 23.8%;
+    left: 64.5%;
+    width: 27%;
+    height: auto;
+    z-index: 3;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.glowna {
+    position: absolute;
+    top: 0%;
+    left: 39.6%;
+    width: auto;
+    height: 93.5%;
+    z-index: 3;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.gorna {
+    position: absolute;
+    top: 80.4%;
+    left: 46.8%;
+    width: auto;
+    height: 7.2%;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.krotka {
+    position: absolute;
+    top: 65%;
+    left: 44%;
+    width: 10%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.lakowa {
+    position: absolute;
+    top: 66.1%;
+    left: 1.3%;
+    width: 33%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.modrzewiowa {
+    position: absolute;
+    top: 24.5%;
+    left: 70.5%;
+    width: auto;
+    height: 18.9%;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.lgow {
+    position: absolute;
+    top: 32.7%;
+    left: 70.7%;
+    width: auto;
+    height: 12%;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.lipowa {
+    position: absolute;
+    top: 74.8%;
+    left: 30.2%;
+    width: auto;
+    height: 8.9%;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.osiedle {
+    position: absolute;
+    top: 66.9%;
+    left: 44.7%;
+    width: 18.8%;
+    height: auto;
+    z-index: 2;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.parcela {
+    position: absolute;
+    top: 82.8%;
+    left: 29.3%;
+    width: 17%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.parkowa {
+    position: absolute;
+    top: 26.3%;
+    left: 42.2%;
+    width: 13%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.pienki {
+    position: absolute;
+    top: 0%;
+    left: 46%;
+    width: 23.4%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.poludniowa {
+    position: absolute;
+    top: 88.8%;
+    left: 47.4%;
+    width: 23.4%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.poprzeczna {
+    position: absolute;
+    top: 72.7%;
+    left: 35%;
+    width: 9.6%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.prosta {
+    position: absolute;
+    top: 52.5%;
+    left: 41.9%;
+    width: 6.5%;
+    height: 48%;
+    z-index: 2;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.sloneczna {
+    position: absolute;
+    top: 74.6%;
+    left: 46.3%;
+    width: 17.6%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.spacerowa {
+    position: absolute;
+    top: 36.2%;
+    left: 53%;
+    width: 11.2%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.spokojna {
+    position: absolute;
+    top: 46.5%;
+    left: 63.8%;
+    width: auto;
+    height: 19.3%;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.spoldzielcza {
+    position: absolute;
+    top: 19.9%;
+    left: 44.5%;
+    width: 20.8%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.szkolna {
+    position: absolute;
+    top: 50.6%;
+    left: 21.8%;
+    width: 21%;
+    height: auto;
+    z-index: 2;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.topolowa {
+    position: absolute;
+    top: 42.5%;
+    left: 42.3%;
+    width: 29%;
+    height: auto;
+    z-index: 2;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.waska {
+    position: absolute;
+    top: 38.1%;
+    left: 14.2%;
+    width: 25.6%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.wschodnia {
+    position: absolute;
+    top: 24.2%;
+    left: 64%;
+    width: auto;
+    height: 21.2%;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.zielona {
+    position: absolute;
+    top: 32.7%;
+    left: 0%;
+    width: 39.5%;
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+}
+
+.szadek {
+    position: absolute;
+    top: -1000px;
+    left: 0%;
+    width: 37%;
+    height: auto;
+    z-index: 5;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+    transition: .5s;
+}
+
+.szadek.center {
+    /* top: 20.3%; */
+    top: 0%;
+    left: 0%;
+}
+
+.szadek.visibleSz {
+    position: absolute;
+    top: 20.3%;
+    left: 0%;
+    width: 37%;
+    height: auto;
+    z-index: 5;
+    opacity: 1;
+    filter: none;
+    animation: blink 1s .5s 1;
+}
+
+.wygwizdow {
+    position: absolute;
+    top: -1000px;
+    left: 33.9%;
+    width: 67.7%;
+    height: auto;
+    z-index: 5;
+    opacity: 1;
+    filter: grayscale(1) brightness(4);
+    transition: .5s;
+}
+
+.wygwizdow.center {
+    top: 11.5%;
+    left: 33.9%;
+}
+
+.wygwizdow.visibleSz {
+    position: absolute;
+    top: 11.5%;
+    left: 33.9%;
+    width: 67.7%;
+    height: auto;
+    z-index: 5;
+    opacity: 1;
+    filter: none;
+    animation: blink 1s .5s 1;
+}
+
+/* buildings */
+
+div.map i {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: red;
+    z-index: 4;
+    opacity: 0;
+    font-size: .7rem;
+}
+
+div.map i.fa-church {
+    top: 29%;
+    left: 42.5%;
+}
+
+div.map i.fa-envelope {
+    top: 25.8%;
+    left: 44.5%;
+}
+
+div.map i.fa-school {
+    top: 38%;
+    left: 42.7%;
+}
+
+div.map i.fa-dollar-sign {
+    top: 25.7%;
+    left: 47.8%;
+}
+
+div.map i.fa-graduation-cap {
+    top: 62%;
+    left: 38%;
+}
+
+div.map i.fa-hospital-alt {
+    top: 62%;
+    left: 44.5%;
+}
+
+div.map i.fa-briefcase-medical {
+    top: 22.7%;
+    left: 44%;
+}
+
+div.map i.fa-glass-martini {
+    top: 6%;
+    left: 39.5%;
+}
+
+div.map i.fa-theater-masks {
+    top: 58.8%;
+    left: 39%;
+}
+
+div.map i.fa-car-side {
+    top: 91%;
+    left: 27.3%;
+}
+
+/* active classes */
+
+.visible {
+    filter: none;
+    animation: blink 1s 1;
+}
+
+.visible2 {
+    filter: none;
+    animation: blink2 1s 1;
+}
+
+/* footer */
+
+footer {
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+footer p {
+    font-size: .6rem;
+    text-transform: uppercase;
+}
+
+/* animations */
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
