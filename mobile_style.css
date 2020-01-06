@@ -64,10 +64,18 @@ main {
     padding: 5px 0 5px;
 }
 
+div.input_area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main div.select_inputs {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0 50px;
 }
@@ -83,10 +91,8 @@ main div.select_inputs label {
 }
 
 main div.select_inputs select {
-    flex-basis: 60%;
+    width: 50%;
     display: block;
-    width: 60%;
-    height: 120%;
     text-transform: uppercase;
     margin-left: 10px;
     background-color: rgb(208, 219, 208);
@@ -140,6 +146,52 @@ div.map img.mapnorth.center {
 
 div.map img.mapnorth_top.center {
     top: 0px;
+}
+
+/* footer */
+
+footer {
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 5px; */
+    background-color: rgb(208, 219, 208);
+}
+
+footer p {
+    font-size: .6rem;
+    text-transform: uppercase;
+}
+
+@media (orientation: landscape) {
+    header {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 40%;
+    }
+    div.map {
+        margin: 0;
+        width: 45%;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    main div.input_area {
+        height: 50%;
+        position: absolute;
+        bottom: 10%;
+        right: 0%;
+        width: 50%;
+    }
+
+    footer {
+        height: 4vh;
+    }
 }
 
 /* streets */
@@ -657,23 +709,7 @@ div.directions i:nth-of-type(6) {
     animation: blink2 1s 1;
 }
 
-/* footer */
 
-footer {
-    height: 3vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 5px; */
-    background-color: rgb(208, 219, 208);
-}
-
-footer p {
-    font-size: .6rem;
-    text-transform: uppercase;
-}
 
 /* animations */
 
