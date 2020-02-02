@@ -9,38 +9,21 @@
         content="Mapa miejscowości Buczek na której możesz odnaleźć wszystkie ulice i budynki użyteczności publicznej">
     <meta name='keywords' content='Buczek, "mapa Buczku" , "ulice w Buczku", "urząd gminy Buczek", truskawka'>
     <title>Odnajdź się w Buczku!</title>
-    <link href="https://fonts.googleapis.com/css?family=Jura:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Teko&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/a5d10ed2bf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="mobile_style.css">
+    <link rel="stylesheet" href="new.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-            <img src="img/logo.png" alt="Logo gminy Buczek">
-            <h1>Odnajdź się w Buczku</h1>
-        </header>
-        <main>
-            <div class="buttons_left">
-                <button class="ulbrojsce button mainmap"><span>Brojsce</span></button>
-                <button class="ulcicha button mainmap"><span>Cicha</span></button>
-                <button class="uldebowa button mainmap"><span>Dębowa</span></button>
-                <button class="ulglowna button mainmap"><span>Główna</span></button>
-                <button class="ulgorna button mainmap"><span>Górna</span></button>
-                <button class="ulkrotka button mainmap"><span>Krótka</span></button>
-                <button class="ullgow button mainmap"><span>Lgów</span></button>
-                <button class="ullipowa button mainmap"><span>Lipowa</span></button>
-                <button class="ullakowa button mainmap"><span>Łąkowa</span></button>
-                <button class="ulmodrzewiowa button mainmap"><span>Modrzewiowa</span></button>
-                <button class="ulosiedle button mainmap"><span>Os. Młodych</span></button>
-                <button class="ulparcela button mainmap"><span>Parcela</span></button>
-                <button class="ulparkowa button mainmap"><span>Parkowa</span></button>
-                <button class="ulpienki button mainmap"><span>Pieńki</span></button>
-            </div>
+        <div class="top">
+            <header>
+                <img src="img/logo.png" alt="Logo gminy Buczek">
+                <h1><span>Odnajdź się w Buczku</span></h1>
+            </header>
             <div class="input_area">
-                <div class="select_inputs">
+                <div class="select_inputs streets">
                     <label for="street">Ulica</label>
                     <select class="select_streets" name="street" onchange="handleSelectStreets()">
                         <option value="none">---</option>
@@ -74,7 +57,7 @@
                         <option value="zielona">zielona</option>
                     </select>
                 </div>
-                <div class="select_inputs">
+                <div class="select_inputs buildings">
                     <label for="buildings">Budynek</label>
                     <select class="select_buildings" name="buildings" onchange="handleSelectBuildings()">
                         <option value="none">---</option>
@@ -91,6 +74,24 @@
                         <option value="urzadgminy">urząd gminy</option>
                     </select>
                 </div>
+            </div>
+        </div>
+        <main>
+            <div class="buttons_left">
+                <button class="ulbrojsce button mainmap"><span>Brojsce</span></button>
+                <button class="ulcicha button mainmap"><span>Cicha</span></button>
+                <button class="uldebowa button mainmap"><span>Dębowa</span></button>
+                <button class="ulglowna button mainmap"><span>Główna</span></button>
+                <button class="ulgorna button mainmap"><span>Górna</span></button>
+                <button class="ulkrotka button mainmap"><span>Krótka</span></button>
+                <button class="ullgow button mainmap"><span>Lgów</span></button>
+                <button class="ullipowa button mainmap"><span>Lipowa</span></button>
+                <button class="ullakowa button mainmap"><span>Łąkowa</span></button>
+                <button class="ulmodrzewiowa button mainmap"><span>Modrzewiowa</span></button>
+                <button class="ulosiedle button mainmap"><span>Os. Młodych</span></button>
+                <button class="ulparcela button mainmap"><span>Parcela</span></button>
+                <button class="ulparkowa button mainmap"><span>Parkowa</span></button>
+                <button class="ulpienki button mainmap"><span>Pieńki</span></button>
             </div>
             <div class="map">
                 <img class="mapofBuczek" src="img/Buczek.png" alt="Mapa Buczku">
@@ -182,6 +183,25 @@
                 <button class="ulzielona button mainmap"><span>Zielona</span></button>
             </div>
         </main>
+        <aside>
+            <div class="select_inputs">
+                <label for="buildings">Budynek</label>
+                <select class="select_buildings_aside" name="buildings" onchange="handleSelectBuildingsAside()">
+                    <option value="none">---</option>
+                    <option value="apteka">apteka</option>
+                    <option value="bank">bank</option>
+                    <option value="bar">bar</option>
+                    <option value="kosciol">kościół</option>
+                    <option value="lpg">lpg</option>
+                    <option value="osrkultury">ośr. kultury</option>
+                    <option value="osrzdrowia">ośr. zdrowia</option>
+                    <option value="poczta">poczta</option>
+                    <option value="pizzeria">pizzeria</option>
+                    <option value="szkola">szkoła</option>
+                    <option value="urzadgminy">urząd gminy</option>
+                </select>
+            </div>
+        </aside>
         <footer>
             <p>&copy; Przemysław Szadkowski</p>
         </footer>

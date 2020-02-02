@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Teko', sans-serif;
     box-sizing: border-box;
 }
 
@@ -13,9 +13,12 @@ html {
 body {
     height: 100vh;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1010px;
     margin: 0 auto;
     background-color: rgb(240, 238, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.wrapper {
@@ -25,104 +28,112 @@ div.wrapper {
     align-items: center;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
-/* header */
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    /* flex-shrink: 2; */
-    height: 17vh;
-    width: 100%;
-    padding-top: 5px;
-}
-
-header img {
-    display: block;
-    height: 60%;
-    margin: 0 auto;
-    padding-bottom: 5px;
-}
-
-header h1 {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: rgb(208, 219, 208);
-    padding: 5px 0;
-}
-
-/* main */
-
-main {
-    height: 80vh;
-    width: 100%;
-    /* flex-shrink: 1; */
+div.top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px 0 5px;
+    height: 30%;
+    width: 100%;
 }
 
-div.input_area {
+main{
+    height: 67%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-div.buttons_left {
-    display: none;
+/* header */
+
+div.top header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    padding: 3px 0;
 }
 
-div.buttons_right {
-    display: none;
+div.top header img {
+    display: block;
+    height: 60%;
+    margin: 0 auto;
+    padding-bottom: 2px;
 }
 
-main div.select_inputs {
+div.top header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C1E30;
+}
+
+div.top header h1 span{
+    display: block;
+    font-size: 1.2rem;
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3px 0;
+    color: rgb(240, 238, 232);
+    letter-spacing: 2px;
+}
+
+/*inputs*/
+
+div.top div.input_area {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.top div.select_inputs {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 40px;
+    margin-top: 5px;
 }
 
-main div.select_inputs + div.select_inputs {
-    margin-top: 10px;
-}
-
-main div.select_inputs label {
-    flex-basis: 35%;
+div.top div.select_inputs label {
+    flex-basis: 20%;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
-main div.select_inputs select {
-    width: 80%;
+div.top div.select_inputs select {
+    width: 40%;
     display: block;
     text-transform: uppercase;
     margin-left: 10px;
-    background-color: rgb(208, 219, 208);
+    background-color: #A6D2FF
 }
 
-div.map {
+main div.map {
     position: relative;
     max-width: 100%;
     margin: 10px 10px 0px;
-    border: 2px solid rgb(208, 219, 208);
+    border: 2px solid #0C1E30;
     overflow: hidden;
 }
 
-div.map img.mapofBuczek {
+main div.map img.mapofBuczek {
     display: block;
     max-width: 100%;
     max-height: 100%;
 }
 
-div.map img.mapnorth {
+main div.map img.mapnorth {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -134,7 +145,7 @@ div.map img.mapnorth {
     z-index: 4;
 }
 
-div.map img.mapnorth_top {
+main div.map img.mapnorth_top {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -146,31 +157,22 @@ div.map img.mapnorth_top {
     z-index: 9;
 }
 
-div.map img.mapnorth.center {
+main div.map img.mapnorth.center {
     top: 0px;
 }
 
-div.map img.mapnorth_top.center {
+main div.map img.mapnorth_top.center {
     top: 0px;
 }
 
-/* footer */
-
-footer {
-    height: 3vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 5px; */
-    background-color: rgb(208, 219, 208);
+div.buttons_left {
+    display: none;
 }
 
-footer p {
-    font-size: .6rem;
-    text-transform: uppercase;
+div.buttons_right {
+    display: none;
 }
+
 /* streets */
 
 .brojsce {
@@ -208,7 +210,7 @@ footer p {
 .glowna {
     position: absolute;
     top: 0%;
-    left: 40%;
+    left: 39.7%;
     width: 60%;
     height: 93.5%;
     z-index: 3;
@@ -526,7 +528,7 @@ div.map i {
     color: red;
     z-index: 4;
     opacity: 0;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 div.map i.fa-church {
@@ -595,24 +597,24 @@ div.directions p {
     position: absolute;
     text-transform: uppercase;
     color: rgb(116, 182, 35);
-    font-size: .6rem;
+    font-size: 70%;
     z-index: 5;
     font-weight: bold;
 }
 
 div.directions p:nth-of-type(1) {
     top: 2%;
-    left: 23%;
+    left: 28%;
 }
 
 div.directions p:nth-of-type(2) {
     top: 92%;
-    left: 84%;
+    left: 81%;
 }
 
 div.directions p:nth-of-type(3) {
     top: 91.5%;
-    left: 1%;
+    left: 2%;
 }
 
 div.directions p:nth-of-type(4) {
@@ -622,7 +624,7 @@ div.directions p:nth-of-type(4) {
 
 div.directions p:nth-of-type(5) {
     top: 31.2%;
-    left: 77.5%;
+    left: 81.5%;
 }
 
 div.directions p:nth-of-type(6) {
@@ -634,7 +636,7 @@ div.directions i {
     position: absolute;
     color: black;
     opacity: 1;
-    font-size: .8rem;
+    font-size: 80%;
 }
 
 div.directions i:nth-of-type(1) {
@@ -673,6 +675,23 @@ div.directions i:nth-of-type(6) {
     transform: rotate(60deg);
 }
 
+/* aside */
+
+aside {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
 /* active classes */
 
 .visible {
@@ -686,158 +705,251 @@ div.directions i:nth-of-type(6) {
 }
 
 @media (orientation: landscape) {
-    header {
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        width: 40%;
-    }
-    div.map {
-        margin: 0;
-        width: 45%;
-        position: absolute;
-        top: 5%;
-        left: 5%;
+    div.wrapper {
+        flex-direction: row;
     }
 
-    main div.input_area {
+    div.top {
+        height: 100%;
+    }
+
+    div.top header {
+        padding: 0;
         height: 50%;
-        position: absolute;
-        bottom: 0%;
-        right: 0%;
-        width: 50%;
+    }
+
+    div.top header img {
+        margin-bottom: 5px;
+        height: 25%;
+    }
+
+    div.top div.input_area {
+        justify-content: flex-start;
+        /* margin-top: 20px; */
+        height: 25%;
+    }
+
+    main {
+        height: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    main div.map {
+        margin: 10px;
     }
 
     footer {
-        height: 4vh;
+        width: 50%;
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        margin-top: 2px;
+        background-color: transparent;
+        align-items: center;
+    }
+
+    footer p {
+        color: black;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 825px) {
+
+    div.wrapper {
+        position: relative;
+        flex-direction: column;
+        max-height: 900px;
+    }
+
+    div.top {
+        height: 14%;
+        min-height: 70px;
+    }
+
+    div.top header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.top header img {
+        order: 2;
+        height: 150%;
+        margin: 0 7% 0 2%;
+    }
+
+    div.top header h1 {
+        height: 100%;
+        width: 100%;
+        transform: skew(-45deg) translateX(-15%);
+    }
+
+    div.top header h1 span {
+        width: 100%;
+        transform: skew(45deg);
+        font-size: 1.9rem;
+        margin-left: 50px;
+    }
+
+    div.top div.input_area {
+        display: none;
     }
 
     div.directions p {
-        font-size: .5rem;
+        font-size: 85%;
     }
 
-    div.directions i {
-        font-size: .6rem;
+    div.directions i:nth-of-type(3) {
+        left: 18%;
     }
 
-}
+    aside {
+        display: block;
+        position: relative;
+        align-self: flex-end;
+        width: 70%;
+        padding: 3% 0;
+        margin-top: 5px;
+        min-height: 30px;
+    }
 
-@media (min-width: 760px) {
-
-    main {
+    aside div.select_inputs {
+        width: 100%;
+        align-self: flex-end;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        overflow: hidden;
-    }
-    
-    div.input_area {
-        display: none;
-    }
-    
-    header {
-        position: static;
-        height: 10vh;
-    }
-    div.map {
-        /* display: none; */
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: relative;
-        max-width: auto;
-        max-height: auto;
-        margin: 6%;
-        top: 0%;
-        left: 0%;
+        background-color: #0C1E30;
+        transform: skew(-45deg) translateX(15%);
     }
 
-    header {
-        width: 100%;
+    aside div.select_inputs label {
+        font-size: 150%;
+        color: rgb(240, 238, 232);
+        margin: 3px 8% 0 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transform: skew(45deg);
     }
-    
-    div.map img.mapofBuczek {
+
+    aside div.select_inputs select {
+        width: 35%;
         display: block;
-        max-width: auto;
-        max-height: auto;
+        text-transform: uppercase;
+        margin-left: 10px;
+        background-color: #A6D2FF;
+        transform: skew(45deg);
     }
 
-    /* buttons */
-div.buttons_left {
-    flex-basis: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    main {
+        height: 75%;
+        width: 100%;
+        min-height: 390px;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    main div.map {
+        margin: 0 auto;
+        max-width: 40%;
+        /* max-height: 100%; */
+    }
+
+    main div.map img.mapofBuczek {
+        max-width: 100%;
+    }
+
+    main div.map img.mapnorth {
+        max-width: 100%;
+    }
+
+    div.buttons_left, div.buttons_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20%;
+        height: 100%;
+    }
+
+    div.buttons_left {
+        align-items: flex-start;
+        margin-right: 50px;
+    }
+
+    div.buttons_right {
+        align-items: flex-end;
+        margin-left: 50px;
+    }
+
+    div.buttons_left button, div.buttons_right button {
+        border-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        min-height: 5%;
+        border-top: none;
+        cursor: pointer;
+        transition: .3s;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: #0C1E30;
+        border-color: rgb(184, 194, 196);
+        font-size: 90%;
+    }
+
+    div.buttons_left button {
+        margin: 1.5% 0 1.5% -20px;
+        transform: skew(-45deg);
+        box-shadow: 7px 4px 0px -2px #BC2026;
+    }
+
+    div.buttons_right button {
+        margin: 1.5% -20px 1.5% 0;
+        transform: skew(45deg);
+        box-shadow: -7px 4px 0px -2px #BC2026;
+    }
+
+    div.buttons_left button span, div.buttons_right button span {
+        display: block;
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 3px;
+    }
+
+    div.buttons_left button span {
+        transform: skew(45deg);
+    }
+
+    div.buttons_right button span {
+        transform: skew(-45deg);
+    }
+
+    div.buttons_left button:hover {
+        background-color: #BC2026;
+        box-shadow: 6px 4px 0px -8px #ccc;
+    }
+
+    div.buttons_right button:hover {
+        background-color: #BC2026;
+        box-shadow: 6px 4px 0px -4px #ccc;
+    }
+
+    footer {
+        width: 100%;
+        height: 3%;
+        align-items: flex-end;
+    }
+
+    footer p {
+        margin-right: 20px;
+    }
+
 }
-
-div.buttons_left button {
-    margin: 2% 0 2% -20px;
-    flex-grow: 1;
-    width: 80%;
-    border-top: none;
-    cursor: pointer;
-    transition: .3s;
-    box-shadow: 7px 4px 0px -2px #BC2026;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: #64878B;
-    transform: skew(-45deg);
-    border-color: rgb(184, 194, 196);
-    font-size: .9rem;
-}
-
-div.buttons_left button:hover {
-    background-color: #BC2026;
-    box-shadow: 6px 4px 0px -8px #ccc;
-}
-
-div.buttons_left button span {
-    display: block;
-    transform: skew(45deg);
-}
-
-div.buttons_right {
-    flex-basis: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-div.buttons_right button {
-    margin: 2% -20px 2% 0;
-    flex-grow: 1;
-    width: 80%;
-    border-top: none;
-    cursor: pointer;
-    transition: .3s;
-    box-shadow: -7px 4px 0px -2px #BC2026;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: #64878B;
-    transform: skew(45deg);
-    border-color: rgb(184, 194, 196);
-    font-size: .9rem;
-}
-
-div.buttons_right button:hover {
-    background-color: #BC2026;
-    box-shadow: 6px 4px 0px -4px #ccc;
-}
-
-div.buttons_right button span {
-    display: block;
-    transform: skew(-45deg);
-}
-
-}
-
-
 
 /* animations */
 
