@@ -18,6 +18,9 @@ const buildings = document.querySelectorAll("div.map i.build");
 const mapaSzadek = document.querySelector(".mapnorth");
 const streetsSzadek = document.querySelector(".mapnorth_top");
 
+const szadekStreet = document.querySelector('.szadek');
+const wygwizdowStreet = document.querySelector('.wygwizdow');
+
 const buttons = document.querySelectorAll('div button');
 
 
@@ -116,15 +119,14 @@ function handleSelectBuildings() {
                     }
                 })
                 if(mapaSzadek.classList.contains('center')) {
-                    options.forEach(option => {
-                        option.selected = false;
-                        if(option.value === "---") {
-                            option.selected = true;
-                        }
+                    buttons.forEach(button => {
+                        button.classList.remove("activeButton");
                     })
                 }
                 mapaSzadek.classList.remove('center');
                 streetsSzadek.classList.remove('center');
+                szadekStreet.classList.remove('center');
+                wygwizdowStreet.classList.remove('center');
                 directions.forEach(direction => {
                     direction.style.opacity = '1';
                 })
@@ -143,11 +145,16 @@ function handleSelectBuildings() {
  }
 
  function handleButtonClick() {
+     buttons.forEach(button => {
+         button.classList.remove("activeButton");
+     })
      streets.forEach(street => {
         street.classList.remove('visible');
         street.classList.remove('visibleSz');
         mapaSzadek.classList.remove('center');
         streetsSzadek.classList.remove('center');
+        szadekStreet.classList.remove('center');
+        wygwizdowStreet.classList.remove('center');
         directions.forEach(direction => {
             direction.style.opacity = '1';
         })
@@ -156,12 +163,20 @@ function handleSelectBuildings() {
         })
      })
      if(this.textContent === "Szadek" || this.textContent === "Wygwizdów") {
-         console.log("NOW!")
         mapaSzadek.classList.add('center');
         streetsSzadek.classList.add('center');
+        szadekStreet.classList.add('center');
+        wygwizdowStreet.classList.add('center');
+        this.classList.add("activeButton");
         buildings.forEach(building => {
             building.classList.remove('visible2');
             building.style.opacity = '0';
+        })
+        building_options_aside.forEach(option => {
+            option.selected = false;
+            if(option.value === "---") {
+                option.selected = true;
+            }
         })
         directions.forEach(direction => {
             direction.style.opacity = '0';
@@ -176,6 +191,7 @@ function handleSelectBuildings() {
             };
     } else {
     document.querySelector('[data-ulica="' + this.className + '"]').classList.toggle("visible");
+    this.classList.add("activeButton");
         }
     };
 

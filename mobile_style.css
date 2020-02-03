@@ -473,8 +473,8 @@ div.buttons_right {
 }
 
 .szadek.center {
-    /* top: 20.3%; */
-    top: 0%;
+    top: 20.3%;
+    /* top: 0%; */
     left: 0%;
 }
 
@@ -704,6 +704,14 @@ footer {
     animation: blink2 1s 1;
 }
 
+div.buttons_left button.activeButton {
+    background-color: #BC2026;
+}
+
+div.buttons_right button.activeButton {
+    background-color: #BC2026;
+}
+
 @media (orientation: landscape) {
     div.wrapper {
         flex-direction: row;
@@ -720,7 +728,7 @@ footer {
 
     div.top header img {
         margin-bottom: 5px;
-        height: 25%;
+        height: 50%;
     }
 
     div.top div.input_area {
