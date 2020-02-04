@@ -16,26 +16,39 @@ body {
     max-width: 1010px;
     margin: 0 auto;
     background-color: rgb(240, 238, 232);
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 div.wrapper {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
 div.top {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     height: 30%;
     width: 100%;
 }
@@ -43,18 +56,27 @@ div.top {
 main{
     height: 67%;
     width: 100%;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 /* header */
 
 div.top header {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
     height: 50%;
     width: 100%;
     padding: 3px 0;
@@ -68,9 +90,12 @@ div.top header img {
 }
 
 div.top header h1 {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     background-color: #0C1E30;
 }
 
@@ -90,17 +115,25 @@ div.top header h1 span{
 div.top div.input_area {
     width: 100%;
     height: 50%;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 div.top div.select_inputs {
     width: 100%;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     margin-top: 5px;
 }
 
@@ -141,6 +174,7 @@ main div.map img.mapnorth {
     max-height: 880px;
     top: -1000px;
     left: 0%;
+    -webkit-transition: .5s;
     transition: .5s;
     z-index: 4;
 }
@@ -153,6 +187,7 @@ main div.map img.mapnorth_top {
     max-height: 880px;
     top: -1000px;
     left: 0%;
+    -webkit-transition: .5s;
     transition: .5s;
     z-index: 9;
 }
@@ -182,7 +217,8 @@ div.buttons_right {
     height: 14.8%;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .cicha {
@@ -193,7 +229,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .debowa {
@@ -204,7 +241,8 @@ div.buttons_right {
     height: auto;
     z-index: 3;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .glowna {
@@ -215,7 +253,8 @@ div.buttons_right {
     height: 93.5%;
     z-index: 3;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .gorna {
@@ -226,7 +265,8 @@ div.buttons_right {
     height: 7.2%;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .krotka {
@@ -237,7 +277,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .lakowa {
@@ -248,7 +289,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .modrzewiowa {
@@ -259,7 +301,8 @@ div.buttons_right {
     height: 18.9%;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .lgow {
@@ -270,7 +313,8 @@ div.buttons_right {
     height: 12%;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .lipowa {
@@ -281,7 +325,8 @@ div.buttons_right {
     height: 8.9%;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .osiedle {
@@ -292,7 +337,8 @@ div.buttons_right {
     height: auto;
     z-index: 2;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .parcela {
@@ -303,7 +349,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .parkowa {
@@ -314,7 +361,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .pienki {
@@ -325,7 +373,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .poludniowa {
@@ -336,7 +385,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .poprzeczna {
@@ -347,7 +397,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .prosta {
@@ -358,7 +409,8 @@ div.buttons_right {
     height: 48%;
     z-index: 2;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .sloneczna {
@@ -369,7 +421,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .spacerowa {
@@ -380,7 +433,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .spokojna {
@@ -391,7 +445,8 @@ div.buttons_right {
     height: 19.3%;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .spoldzielcza {
@@ -402,7 +457,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .szkolna {
@@ -413,7 +469,8 @@ div.buttons_right {
     height: auto;
     z-index: 2;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .topolowa {
@@ -424,7 +481,8 @@ div.buttons_right {
     height: auto;
     z-index: 2;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .waska {
@@ -435,7 +493,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .wschodnia {
@@ -446,7 +505,8 @@ div.buttons_right {
     height: 21.2%;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .zielona {
@@ -457,7 +517,8 @@ div.buttons_right {
     height: auto;
     z-index: 1;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
 }
 
 .szadek {
@@ -468,7 +529,9 @@ div.buttons_right {
     height: auto;
     z-index: 5;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
+    -webkit-transition: .5s;
     transition: .5s;
 }
 
@@ -486,8 +549,10 @@ div.buttons_right {
     height: auto;
     z-index: 5;
     opacity: 1;
-    filter: none;
-    animation: blink 1s .5s 1;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-animation: blink 1s .5s 1;
+            animation: blink 1s .5s 1;
 }
 
 .wygwizdow {
@@ -498,7 +563,9 @@ div.buttons_right {
     height: auto;
     z-index: 5;
     opacity: 1;
-    filter: grayscale(1) brightness(4);
+    -webkit-filter: grayscale(1) brightness(4);
+            filter: grayscale(1) brightness(4);
+    -webkit-transition: .5s;
     transition: .5s;
 }
 
@@ -515,8 +582,10 @@ div.buttons_right {
     height: auto;
     z-index: 5;
     opacity: 1;
-    filter: none;
-    animation: blink 1s .5s 1;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-animation: blink 1s .5s 1;
+            animation: blink 1s .5s 1;
 }
 
 /* buildings */
@@ -642,37 +711,43 @@ div.directions i {
 div.directions i:nth-of-type(1) {
     top: 0.2%;
     left: 39.5%;
-    transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
 }
 
 div.directions i:nth-of-type(2) {
     top: 89%;
     left: 90%;
-    transform: rotate(130deg);
+    -webkit-transform: rotate(130deg);
+            transform: rotate(130deg);
 }
 
 div.directions i:nth-of-type(3) {
     top: 92%;
     left: 16%;
-    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg);
+            transform: rotate(200deg);
 }
 
 div.directions i:nth-of-type(4) {
     top: 27%;
     left: 0.6%;
-    transform: rotate(292deg);
+    -webkit-transform: rotate(292deg);
+            transform: rotate(292deg);
 }
 
 div.directions i:nth-of-type(5) {
     top: 30.6%;
     left: 92.5%;
-    transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
 }
 
 div.directions i:nth-of-type(6) {
     top: 0.9%;
     left: 66.5%;
-    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
 }
 
 /* aside */
@@ -684,10 +759,15 @@ aside {
 /* footer */
 
 footer {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+            align-items: center;
     width: 100%;
     text-align: center;
 }
@@ -695,13 +775,17 @@ footer {
 /* active classes */
 
 .visible {
-    filter: none;
-    animation: blink 1s 1;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-animation: blink 1s 1;
+            animation: blink 1s 1;
 }
 
 .visible2 {
-    filter: none;
-    animation: blink2 1s 1;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-animation: blink2 1s 1;
+            animation: blink2 1s 1;
 }
 
 div.buttons_left button.activeButton {
@@ -714,7 +798,9 @@ div.buttons_right button.activeButton {
 
 @media (orientation: landscape) {
     div.wrapper {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
     }
 
     div.top {
@@ -732,7 +818,8 @@ div.buttons_right button.activeButton {
     }
 
     div.top div.input_area {
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+                justify-content: flex-start;
         /* margin-top: 20px; */
         height: 25%;
     }
@@ -754,7 +841,8 @@ div.buttons_right button.activeButton {
         bottom: 0%;
         margin-top: 2px;
         background-color: transparent;
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
     }
 
     footer p {
@@ -767,7 +855,9 @@ div.buttons_right button.activeButton {
 
     div.wrapper {
         position: relative;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
         max-height: 900px;
     }
 
@@ -777,13 +867,18 @@ div.buttons_right button.activeButton {
     }
 
     div.top header {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
     }
 
     div.top header img {
-        order: 2;
+        -webkit-box-ordinal-group: 3;
+                order: 2;
         height: 150%;
         margin: 0 7% 0 2%;
     }
@@ -791,12 +886,14 @@ div.buttons_right button.activeButton {
     div.top header h1 {
         height: 100%;
         width: 100%;
-        transform: skew(-45deg) translateX(-15%);
+        -webkit-transform: skew(-45deg) translateX(-15%);
+                transform: skew(-45deg) translateX(-15%);
     }
 
     div.top header h1 span {
         width: 100%;
-        transform: skew(45deg);
+        -webkit-transform: skew(45deg);
+                transform: skew(45deg);
         font-size: 1.9rem;
         margin-left: 50px;
     }
@@ -826,11 +923,15 @@ div.buttons_right button.activeButton {
     aside div.select_inputs {
         width: 100%;
         align-self: flex-end;
+        display: -webkit-box;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
         background-color: #0C1E30;
-        transform: skew(-45deg) translateX(15%);
+        -webkit-transform: skew(-45deg) translateX(15%);
+                transform: skew(-45deg) translateX(15%);
     }
 
     aside div.select_inputs label {
@@ -840,7 +941,8 @@ div.buttons_right button.activeButton {
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 1px;
-        transform: skew(45deg);
+        -webkit-transform: skew(45deg);
+                transform: skew(45deg);
     }
 
     aside div.select_inputs select {
@@ -849,15 +951,19 @@ div.buttons_right button.activeButton {
         text-transform: uppercase;
         margin-left: 10px;
         background-color: #A6D2FF;
-        transform: skew(45deg);
+        -webkit-transform: skew(45deg);
+                transform: skew(45deg);
     }
 
     main {
         height: 75%;
         width: 100%;
         min-height: 390px;
-        flex-direction: row;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        -webkit-box-align: center;
+                align-items: center;
         margin: 20px 0;
     }
 
@@ -876,32 +982,42 @@ div.buttons_right button.activeButton {
     }
 
     div.buttons_left, div.buttons_right {
+        display: -webkit-box;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
         width: 20%;
         height: 100%;
     }
 
     div.buttons_left {
-        align-items: flex-start;
+        -webkit-box-align: start;
+                align-items: flex-start;
         margin-right: 50px;
     }
 
     div.buttons_right {
-        align-items: flex-end;
+        -webkit-box-align: end;
+                align-items: flex-end;
         margin-left: 50px;
     }
 
     div.buttons_left button, div.buttons_right button {
         border-style: none;
+        display: -webkit-box;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
         width: 90%;
         min-height: 5%;
         border-top: none;
         cursor: pointer;
+        -webkit-transition: .3s;
         transition: .3s;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -912,13 +1028,15 @@ div.buttons_right button.activeButton {
 
     div.buttons_left button {
         margin: 1.5% 0 1.5% -20px;
-        transform: skew(-45deg);
+        -webkit-transform: skew(-45deg);
+                transform: skew(-45deg);
         box-shadow: 7px 4px 0px -2px #BC2026;
     }
 
     div.buttons_right button {
         margin: 1.5% -20px 1.5% 0;
-        transform: skew(45deg);
+        -webkit-transform: skew(45deg);
+                transform: skew(45deg);
         box-shadow: -7px 4px 0px -2px #BC2026;
     }
 
@@ -930,11 +1048,13 @@ div.buttons_right button.activeButton {
     }
 
     div.buttons_left button span {
-        transform: skew(45deg);
+        -webkit-transform: skew(45deg);
+                transform: skew(45deg);
     }
 
     div.buttons_right button span {
-        transform: skew(-45deg);
+        -webkit-transform: skew(-45deg);
+                transform: skew(-45deg);
     }
 
     div.buttons_left button:hover {
@@ -950,7 +1070,8 @@ div.buttons_right button.activeButton {
     footer {
         width: 100%;
         height: 3%;
-        align-items: flex-end;
+        -webkit-box-align: end;
+                align-items: flex-end;
     }
 
     footer p {
@@ -960,6 +1081,28 @@ div.buttons_right button.activeButton {
 }
 
 /* animations */
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
 
 @keyframes blink {
     0% {
@@ -980,6 +1123,32 @@ div.buttons_right button.activeButton {
 
     100% {
         opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
