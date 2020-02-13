@@ -798,6 +798,7 @@ div.buttons_right button.activeButton {
 
 @media (orientation: landscape) {
     div.wrapper {
+        position: relative;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
                 flex-direction: row;
