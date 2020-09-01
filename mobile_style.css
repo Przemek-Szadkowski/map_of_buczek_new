@@ -36,6 +36,7 @@ div.wrapper {
             align-items: center;
     height: 100vh;
     width: 100%;
+    /* max-width: 364px; */
     overflow: hidden;
 }
 
@@ -154,10 +155,10 @@ div.top div.select_inputs select {
 
 main div.map {
     position: relative;
-    max-width: 100%;
     margin: 10px 10px 0px;
     border: 2px solid #0C1E30;
     overflow: hidden;
+    /* max-width: auto; */
 }
 
 main div.map img.mapofBuczek {
@@ -170,7 +171,7 @@ main div.map img.mapnorth {
     position: absolute;
     height: 100%;
     width: 100%;
-    max-width: 384px;
+    /* max-width: 384px; */
     max-height: 880px;
     top: -1000px;
     left: 0%;
@@ -799,6 +800,7 @@ div.buttons_right button.activeButton {
 @media (orientation: landscape) {
     div.wrapper {
         position: relative;
+        max-width: 80%;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
                 flex-direction: row;
@@ -852,10 +854,23 @@ div.buttons_right button.activeButton {
     }
 }
 
+@media (min-width: 399px) and (max-width: 598px) {
+    main {
+           width: 80%;
+    }
+}
+
+@media (min-width: 599px) and (max-width: 824px) {
+    main {
+           width: 80%;
+    }
+}
+
 @media (min-width: 825px) {
 
     div.wrapper {
         position: relative;
+        max-width: 100%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
                 flex-direction: column;
