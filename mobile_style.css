@@ -799,13 +799,13 @@ div.buttons_right button.activeButton {
 
 @media (min-width: 399px) and (max-width: 598px) {
     main {
-           width: 70%;
+        max-width: 360px;
     }
 }
 
 @media (min-width: 599px) and (max-width: 824px) {
-    main {
-           width: 80%;
+    main div.map {
+        max-width: 460px;
     }
 }
 
