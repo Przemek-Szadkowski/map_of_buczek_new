@@ -797,6 +797,18 @@ div.buttons_right button.activeButton {
     background-color: #BC2026;
 }
 
+@media (min-width: 399px) and (max-width: 598px) {
+    main {
+           width: 70%;
+    }
+}
+
+@media (min-width: 599px) and (max-width: 824px) {
+    main {
+           width: 80%;
+    }
+}
+
 @media (orientation: landscape) {
     div.wrapper {
         position: relative;
@@ -827,8 +839,13 @@ div.buttons_right button.activeButton {
         height: 25%;
     }
 
+    div.directions p {
+        font-size: .6rem;
+    }
+
     main {
         height: 100%;
+        width: 95%;
         margin-top: 0;
         padding: 0;
     }
@@ -854,17 +871,7 @@ div.buttons_right button.activeButton {
     }
 }
 
-@media (min-width: 399px) and (max-width: 598px) {
-    main {
-           width: 80%;
-    }
-}
 
-@media (min-width: 599px) and (max-width: 824px) {
-    main {
-           width: 80%;
-    }
-}
 
 @media (min-width: 825px) {
 
