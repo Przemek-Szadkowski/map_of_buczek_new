@@ -158,7 +158,6 @@ main div.map {
     margin: 10px 10px 0px;
     border: 2px solid #0C1E30;
     overflow: hidden;
-    /* max-width: auto; */
 }
 
 main div.map img.mapofBuczek {
@@ -798,8 +797,8 @@ div.buttons_right button.activeButton {
 }
 
 @media (min-width: 399px) and (max-width: 598px) {
-    main {
-        max-width: 360px;
+    main div.map {
+        max-width: 380px;
     }
 }
 
