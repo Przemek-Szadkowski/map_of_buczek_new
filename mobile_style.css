@@ -162,8 +162,9 @@ main div.map {
 
 main div.map img.mapofBuczek {
     display: block;
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%; */
+    width: 100%;
+    height: 100%;
 }
 
 main div.map img.mapnorth {
@@ -797,13 +798,13 @@ div.buttons_right button.activeButton {
 }
 
 @media (min-width: 399px) and (max-width: 598px) {
-    main div.map {
+    main {
         max-width: 380px;
     }
 }
 
 @media (min-width: 599px) and (max-width: 824px) {
-    main div.map {
+    main {
         max-width: 460px;
     }
 }
