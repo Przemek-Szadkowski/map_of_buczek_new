@@ -34,7 +34,11 @@
         <div class="input_area">
           <div class="select_inputs streets">
             <label for="street">Ulica</label>
-            <select class="select_streets" name="street">
+            <select
+              class="select_streets"
+              name="street"
+              onchange="handleSelectStreets()"
+            >
               <option value="none">---</option>
               <option value="brojsce">brojsce</option>
               <option value="cicha">cicha</option>
@@ -68,7 +72,11 @@
           </div>
           <div class="select_inputs buildings">
             <label for="buildings">Budynek</label>
-            <select class="select_buildings" name="buildings">
+            <select
+              class="select_buildings"
+              name="buildings"
+              onchange="handleSelectBuildings()"
+            >
               <option value="none">---</option>
               <option value="apteka">apteka</option>
               <option value="bank">bank</option>
@@ -341,10 +349,14 @@
           <button class="ulzielona button mainmap"><span>Zielona</span></button>
         </div>
       </main>
-      <aside class="aside_buildings">
+      <!-- <aside>
         <div class="select_inputs">
           <label for="buildings">Budynek</label>
-          <select class="select_buildings_aside" name="buildings">
+          <select
+            class="select_buildings_aside"
+            name="buildings"
+            onchange="handleSelectBuildingsAside()"
+          >
             <option value="none">---</option>
             <option value="apteka">apteka</option>
             <option value="bank">bank</option>
@@ -359,11 +371,11 @@
             <option value="urzadgminy">urząd gminy</option>
           </select>
         </div>
-      </aside>
+      </aside> -->
       <footer>
         <p>&copy; Przemysław Szadkowski</p>
       </footer>
     </div>
-    <script src="app.js" type="module"></script>
+    <script src="new_script.js" type="module"></script>
   </body>
 </html>

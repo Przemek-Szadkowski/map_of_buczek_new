@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Mapa miejscowości Buczek na której możesz odnaleźć wszystkie ulice i budynki użyteczności publicznej">
+    <meta name='keywords' content='Buczek, "mapa Buczku" , "ulice w Buczku", "urząd gminy Buczek", truskawka'>
+    <title>Odnajdź się w Buczku!</title>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Teko&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a5d10ed2bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mobile_style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header>
+                <img src="img/logo.png" alt="Logo gminy Buczek">
+                <h1><span>Odnajdź się w Buczku</span></h1>
+            </header>
+            <div class="input_area">
+                <div class="select_inputs streets">
+                    <label for="street">Ulica</label>
+                    <select class="select_streets" name="street" onchange="handleSelectStreets()">
+                        <option value="none">---</option>
+                        <option value="brojsce">brojsce</option>
+                        <option value="cicha">cicha</option>
+                        <option value="debowa">dębowa</option>
+                        <option value="glowna">główna</option>
+                        <option value="gorna">górna</option>
+                        <option value="krotka">krótka</option>
+                        <option value="lgow">lgów</option>
+                        <option value="lipowa">lipowa</option>
+                        <option value="lakowa">łąkowa</option>
+                        <option value="modrzewiowa">modrzewiowa</option>
+                        <option value="osiedle">os. Młodych</option>
+                        <option value="parcela">parcela</option>
+                        <option value="parkowa">parkowa</option>
+                        <option value="pienki">pieńki</option>
+                        <option value="poludniowa">południowa</option>
+                        <option value="poprzeczna">poprzeczna</option>
+                        <option value="prosta">prosta</option>
+                        <option value="sloneczna">słoneczna</option>
+                        <option value="spacerowa">spacerowa</option>
+                        <option value="spokojna">spokojna</option>
+                        <option value="spoldzielcza">spółdzielcza</option>
+                        <option value="szadek">szadek</option>
+                        <option value="szkolna">szkolna</option>
+                        <option value="topolowa">topolowa</option>
+                        <option value="waska">wąska</option>
+                        <option value="wschodnia">wschodnia</option>
+                        <option value="wygwizdow">wygwizdów</option>
+                        <option value="zielona">zielona</option>
+                    </select>
+                </div>
+                <div class="select_inputs buildings">
+                    <label for="buildings">Budynek</label>
+                    <select class="select_buildings" name="buildings" onchange="handleSelectBuildings()">
+                        <option value="none">---</option>
+                        <option value="apteka">apteka</option>
+                        <option value="bank">bank</option>
+                        <option value="bar">bar</option>
+                        <option value="kosciol">kościół</option>
+                        <option value="lpg">lpg</option>
+                        <option value="osrkultury">ośr. kultury</option>
+                        <option value="osrzdrowia">ośr. zdrowia</option>
+                        <option value="poczta">poczta</option>
+                        <option value="pizzeria">pizzeria</option>
+                        <option value="szkola">szkoła</option>
+                        <option value="urzadgminy">urząd gminy</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="buttons_left">
+                <button class="ulbrojsce button mainmap"><span>Brojsce</span></button>
+                <button class="ulcicha button mainmap"><span>Cicha</span></button>
+                <button class="uldebowa button mainmap"><span>Dębowa</span></button>
+                <button class="ulglowna button mainmap"><span>Główna</span></button>
+                <button class="ulgorna button mainmap"><span>Górna</span></button>
+                <button class="ulkrotka button mainmap"><span>Krótka</span></button>
+                <button class="ullgow button mainmap"><span>Lgów</span></button>
+                <button class="ullipowa button mainmap"><span>Lipowa</span></button>
+                <button class="ullakowa button mainmap"><span>Łąkowa</span></button>
+                <button class="ulmodrzewiowa button mainmap"><span>Modrzewiowa</span></button>
+                <button class="ulosiedle button mainmap"><span>Os. Młodych</span></button>
+                <button class="ulparcela button mainmap"><span>Parcela</span></button>
+                <button class="ulparkowa button mainmap"><span>Parkowa</span></button>
+                <button class="ulpienki button mainmap"><span>Pieńki</span></button>
+            </div>
+            <div class="map">
+                <img class="mapofBuczek" src="img/Buczek.png" alt="Mapa Buczku">
+                <img class="mapnorth_top" src="img/wszystkie_ulice_szadek.png" alt="Ulice Buczku">
+                <img class="mapnorth" src="img/Szadek_wygwizdow_2.png" alt="Mapa północnej części Buczku">
+                <img class="szadek street" src="img/szadek.png" alt="ulica szadek">
+                <img class="wygwizdow street" src="img/wygwizdow.png" alt="ulica wygwizdów">
+                <img data-ulica="ulbrojsce button mainmap" class="brojsce street" src="img/brojsce.png"
+                    alt="ulica brojsce">
+                <img data-ulica="ulcicha button mainmap" class="cicha street" src="img/cicha.png" alt="ulica cicha">
+                <img data-ulica="uldebowa button mainmap" class="debowa street" src="img/debowa.png" alt="ulica dębowa">
+                <img data-ulica="ulglowna button mainmap" class="glowna street" src="img/glowna.png" alt="ulica główna">
+                <img data-ulica="ulgorna button mainmap" class="gorna street" src="img/gorna.png" alt="ulica górna">
+                <img data-ulica="ulkrotka button mainmap" class="krotka street" src="img/krotka.png" alt="ulica krótka">
+                <img data-ulica="ullakowa button mainmap" class="lakowa street" src="img/lakowa.png" alt="ulica łąkowa">
+                <img data-ulica="ullgow button mainmap" class="lgow street" src="img/lgow.png" alt="ulica lgów">
+                <img data-ulica="ullipowa button mainmap" class="lipowa street" src="img/lipowa.png" alt="ulica lipowa">
+                <img data-ulica="ulmodrzewiowa button mainmap" class="modrzewiowa street" src="img/modrzewiowa.png"
+                    alt="ulica modrzewiowa">
+                <img data-ulica="ulosiedle button mainmap" class="osiedle street" src="img/osmlodych.png"
+                    alt="ulica osiedle młodych">
+                <img data-ulica="ulparcela button mainmap" class="parcela street" src="img/parcela.png"
+                    alt="ulica parcela">
+                <img data-ulica="ulparkowa button mainmap" class="parkowa street" src="img/parkowa.png"
+                    alt="ulica parkowa">
+                <img data-ulica="ulpienki button mainmap" class="pienki street" src="img/pienki.png" alt="ulica pieńki">
+                <img data-ulica="ulpoludniowa button mainmap" class="poludniowa street" src="img/poludniowa.png"
+                    alt="ulica poludniowa">
+                <img data-ulica="ulpoprzeczna button mainmap" class="poprzeczna street" src="img/poprzeczna.png"
+                    alt="ulica poprzeczna">
+                <img data-ulica="ulprosta button mainmap" class="prosta street" src="img/prosta.png" alt="ulica prosta">
+                <img data-ulica="ulsloneczna button mainmap" class="sloneczna street" src="img/sloneczna.png"
+                    alt="ulica słoneczna">
+                <img data-ulica="ulspacerowa button mainmap" class="spacerowa street" src="img/spacerowa.png"
+                    alt="ulica spacerowa">
+                <img data-ulica="ulspokojna button mainmap" class="spokojna street" src="img/spokojna.png"
+                    alt="ulica spokojna">
+                <img data-ulica="ulspoldzielcza button mainmap" class="spoldzielcza street" src="img/spoldzielcza.png"
+                    alt="ulica spółdzielcza">
+                <img data-ulica="ulszkolna button mainmap" class="szkolna street" src="img/szkolna.png"
+                    alt="ulica szkolna">
+                <img data-ulica="ultopolowa button mainmap" class="topolowa street" src="img/topolowa.png"
+                    alt="ulica topolowa">
+                <img data-ulica="ulwaska button mainmap" class="waska street" src="img/waska.png" alt="ulica wąska">
+                <img data-ulica="ulwschodnia button mainmap" class="wschodnia street" src="img/wschodnia.png"
+                    alt="ulica wschodnia">
+                <img data-ulica="ulzielona button mainmap" class="zielona street" src="img/zielona.png"
+                    alt="ulica zielona">
+                <i class="fas build fa-church kosciol"></i>
+                <i class="fas build fa-envelope poczta"></i>
+                <i class="fas build fa-school urzadgminy"></i>
+                <i class="fas build fa-dollar-sign bank"></i>
+                <i class="fas build fa-graduation-cap szkola"></i>
+                <i class="fas build fa-hospital-alt osrzdrowia"></i>
+                <i class="fas build fa-briefcase-medical apteka"></i>
+                <i class="fas build fa-glass-martini bar"></i>
+                <i class="fas build fa-theater-masks osrkultury"></i>
+                <i class="fas build fa-car-side lpg"></i>
+                <i class="fas build fa-pizza-slice pizzeria"></i>
+                <div class="directions">
+                    <p>do Łasku</p>
+                    <i class="fas fa-arrow-up"></i>
+                    <p>do Zelowa</p>
+                    <i class="fas fa-arrow-up"></i>
+                    <p>do Szczercowa</p>
+                    <i class="fas fa-arrow-up"></i>
+                    <p>do Sędziejowic</p>
+                    <i class="fas fa-arrow-up"></i>
+                    <p>do Maleni</p>
+                    <i class="fas fa-arrow-up"></i>
+                    <p>do Brodni</p>
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+            </div>
+            <div class="buttons_right">
+                <button class="ulpoludniowa button mainmap"><span>Południowa</span></button>
+                <button class="ulpoprzeczna button mainmap"><span>Poprzeczna</span></button>
+                <button class="ulprosta button mainmap"><span>Prosta</span></button>
+                <button class="ulsloneczna button mainmap"><span>Słoneczna</span></button>
+                <button class="ulspacerowa button mainmap"><span>Spacerowa</span></button>
+                <button class="ulspokojna button mainmap"><span>Spokojna</span></button>
+                <button class="ulspoldzielcza button mainmap"><span>Spółdzielcza</span></button>
+                <button class="ulszadek special_button"><span>Szadek</span></button>
+                <button class="ulszkolna button mainmap"><span>Szkolna</span></button>
+                <button class="ultopolowa button mainmap"><span>Topolowa</span></button>
+                <button class="ulwaska button mainmap"><span>Wąska</span></button>
+                <button class="ulwschodnia button mainmap"><span>Wschodnia</span></button>
+                <button class="ulwygwizdow special_button"><span>Wygwizdów</span></button>
+                <button class="ulzielona button mainmap"><span>Zielona</span></button>
+            </div>
+        </main>
+        <aside>
+            <div class="select_inputs">
+                <label for="buildings">Budynek</label>
+                <select class="select_buildings_aside" name="buildings" onchange="handleSelectBuildingsAside()">
+                    <option value="none">---</option>
+                    <option value="apteka">apteka</option>
+                    <option value="bank">bank</option>
+                    <option value="bar">bar</option>
+                    <option value="kosciol">kościół</option>
+                    <option value="lpg">lpg</option>
+                    <option value="osrkultury">ośr. kultury</option>
+                    <option value="osrzdrowia">ośr. zdrowia</option>
+                    <option value="poczta">poczta</option>
+                    <option value="pizzeria">pizzeria</option>
+                    <option value="szkola">szkoła</option>
+                    <option value="urzadgminy">urząd gminy</option>
+                </select>
+            </div>
+        </aside>
+        <footer>
+            <p>&copy; Przemysław Szadkowski</p>
+        </footer>
+    </div>
+    <script src="new_script.js"></script>
+</body>
+
+</html>

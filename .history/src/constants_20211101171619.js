@@ -1,0 +1,14 @@
+export const SELECT_STREETS_SELECTOR = '.select_streets';
+export const OPTIONS_SELECTOR = 'option';
+export const SELECT_BUILDINGS_SELECTOR = '.select_buildings';
+export const ASIDE_BUILDINGS_SELECTOR = '.aside_buildings';
+export const SELECT_ASIDE_BUILDINGS_SELECTOR = '.select_buildings_aside';
+export const DIRECTIONS_SELECTOR = 'div.directions i';
+export const DESCRIPTIONS_SELECTOR = 'div.directions p';
+export const STREETS_SELECTOR = '.street';
+export const BUILDINGS_SELECTOR = 'div.map i.build';
+export const MAP_OF_SZADEK_SELECTOR = '.mapnorth';
+export const STREETS_OF_SZADEK_SELECTOR = '.mapnorth_top';
+export const SZADEK_STREET_SELECTOR = '.szadek';
+export const WYGWIZDOW_STREET_SELECTOR = '.wygwizdow';
+export const BUTTONS_SELECTOR = 'div button';

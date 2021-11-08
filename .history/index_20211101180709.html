@@ -68,7 +68,11 @@
           </div>
           <div class="select_inputs buildings">
             <label for="buildings">Budynek</label>
-            <select class="select_buildings" name="buildings">
+            <select
+              class="select_buildings"
+              name="buildings"
+              onchange="handleSelectBuildings()"
+            >
               <option value="none">---</option>
               <option value="apteka">apteka</option>
               <option value="bank">bank</option>
@@ -364,6 +368,6 @@
         <p>&copy; Przemysław Szadkowski</p>
       </footer>
     </div>
-    <script src="app.js" type="module"></script>
+    <script src="new_script.js" type="module"></script>
   </body>
 </html>
